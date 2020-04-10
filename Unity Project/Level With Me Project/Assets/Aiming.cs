@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Aiming : MonoBehaviour
 {
-    [SerializeField] private string mouseXInputName, mouseYInputName;
     [SerializeField] private float mouseSensitivity;
 
     [SerializeField] private Transform playerBody;
@@ -13,14 +12,8 @@ public class Aiming : MonoBehaviour
 
     private void Awake()
     {
-        LockCursor();
-        xAxisClamp = 0.0f;
-    }
-
-
-    private void LockCursor()
-    {
         Cursor.lockState = CursorLockMode.Locked;
+        xAxisClamp = 0.0f;
     }
 
     private void Update()
@@ -30,8 +23,8 @@ public class Aiming : MonoBehaviour
 
     private void CameraRotation()
     {
-        float mouseX = Input.GetAxis(mouseXInputName) * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis(mouseYInputName) * mouseSensitivity * Time.deltaTime;
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
         xAxisClamp += mouseY;
 

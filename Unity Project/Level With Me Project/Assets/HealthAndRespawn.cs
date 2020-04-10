@@ -9,16 +9,25 @@ public class HealthAndRespawn : MonoBehaviour
     private int currentHealth;
     [SerializeField] private float minimumHeight;
 
+    private CharacterController charController;
+
+
+    private void Awake()
+    {
+        charController = GetComponent<CharacterController>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
         CheckForRespawn();
+        CheckForOutOfBounds();
     }
 
     void CheckForOutOfBounds()
@@ -39,7 +48,7 @@ public class HealthAndRespawn : MonoBehaviour
 
     void Respawn()
     {
-
+        charController.velocity.Set(0,0,0);
         transform.position = respawnPoint;
         currentHealth = maxHealth;
     }

@@ -11,8 +11,6 @@ public class Moving : MonoBehaviour
     private CharacterController charController;
 
 
-    private bool isJumping;
-
     private void Awake()
     {
         charController = GetComponent<CharacterController>();
@@ -28,8 +26,9 @@ public class Moving : MonoBehaviour
         float horizInput = Input.GetAxis(horizontalInputName) * movementSpeed;
         float vertInput = Input.GetAxis(verticalInputName) * movementSpeed;
 
-        Vector3 forwardMovement = transform.forward * vertInput;
         Vector3 rightMovement = transform.right * horizInput;
+        Vector3 forwardMovement = transform.forward * vertInput;
+
 
         charController.SimpleMove(forwardMovement + rightMovement);
 
