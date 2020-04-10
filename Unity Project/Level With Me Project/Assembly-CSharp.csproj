@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Aiming.cs" />
+     <Compile Include="Assets\HealthAndRespawn.cs" />
      <Compile Include="Assets\Moving.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/BA4 - Experimental Games/BA4_Experimental_Games/Unity Project/Level With Me Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
