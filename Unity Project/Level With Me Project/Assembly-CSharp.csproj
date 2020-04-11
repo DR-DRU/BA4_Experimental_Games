@@ -56,7 +56,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Aiming.cs" />
+     <Compile Include="Assets\FadeIn.cs" />
+     <Compile Include="Assets\GoalReached.cs" />
      <Compile Include="Assets\HealthAndRespawn.cs" />
+     <Compile Include="Assets\LevelGoal.cs" />
      <Compile Include="Assets\Moving.cs" />
      <Compile Include="Assets\Projectile.cs" />
      <Compile Include="Assets\Shooting.cs" />

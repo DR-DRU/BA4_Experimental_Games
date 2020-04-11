@@ -48,10 +48,10 @@ public class HealthAndRespawn : MonoBehaviour
 
     void Respawn()
     {
-        Debug.Log(charController.velocity);
-        charController.velocity.Set(0f,0f,0f);
+        //Debug.Log(charController.velocity);
+        //charController.velocity.Set(0f,0f,0f);
         //charController.SimpleMove(Vector3.zero);
-        charController.Move(Vector3.zero);
+        //charController.Move(Vector3.zero);
         transform.position = respawnPoint;
         currentHealth = maxHealth;
     }
