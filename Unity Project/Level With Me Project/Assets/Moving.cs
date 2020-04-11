@@ -30,7 +30,7 @@ public class Moving : MonoBehaviour
         Vector3 forwardMovement = transform.forward * vertInput;
 
 
-        charController.SimpleMove(forwardMovement + rightMovement);
+        charController.Move(forwardMovement + rightMovement);
 
 
     }
