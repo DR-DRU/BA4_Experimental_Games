@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shooting : MonoBehaviour
 {
     public GameObject projectilePrefab;
-
+    public GameObject projectileSpawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +23,7 @@ public class Shooting : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
 
-            Instantiate(projectilePrefab, transform.position, transform.rotation);
+            Instantiate(projectilePrefab, projectileSpawn.transform.position, transform.rotation);
         }
     }
 }

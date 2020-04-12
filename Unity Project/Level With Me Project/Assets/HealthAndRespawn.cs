@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthAndRespawn : MonoBehaviour
 {
     [SerializeField] private int maxHealth;
     public Vector3 respawnPoint;
-    private int currentHealth;
+    public int currentHealth;
     [SerializeField] private float minimumHeight;
+    public Text healthCounter;
 
     private CharacterController charController;
 
@@ -26,6 +28,7 @@ public class HealthAndRespawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        healthCounter.text = "Health: " + currentHealth;
         CheckForRespawn();
         CheckForOutOfBounds();
     }
