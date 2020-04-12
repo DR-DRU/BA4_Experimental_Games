@@ -55,15 +55,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Aiming.cs" />
-     <Compile Include="Assets\Enemy.cs" />
-     <Compile Include="Assets\FadeIn.cs" />
-     <Compile Include="Assets\GoalReached.cs" />
-     <Compile Include="Assets\HealthAndRespawn.cs" />
-     <Compile Include="Assets\LevelGoal.cs" />
-     <Compile Include="Assets\Moving.cs" />
-     <Compile Include="Assets\Projectile.cs" />
-     <Compile Include="Assets\Shooting.cs" />
+     <Compile Include="Assets\Stage 1\Scripts\Aiming.cs" />
+     <Compile Include="Assets\Stage 1\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Stage 1\Scripts\FadeIn.cs" />
+     <Compile Include="Assets\Stage 1\Scripts\GoalReached.cs" />
+     <Compile Include="Assets\Stage 1\Scripts\HealthAndRespawn.cs" />
+     <Compile Include="Assets\Stage 1\Scripts\LevelGoal.cs" />
+     <Compile Include="Assets\Stage 1\Scripts\Moving.cs" />
+     <Compile Include="Assets\Stage 1\Scripts\Projectile.cs" />
+     <Compile Include="Assets\Stage 1\Scripts\Shooting.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/BA4 - Experimental Games/BA4_Experimental_Games/Unity Project/Level With Me Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
