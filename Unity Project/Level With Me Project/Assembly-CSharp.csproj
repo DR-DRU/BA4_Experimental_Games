@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\InformationIcon.cs" />
      <Compile Include="Assets\Stage 1\Scripts\Aiming.cs" />
      <Compile Include="Assets\Stage 1\Scripts\Enemy.cs" />
      <Compile Include="Assets\Stage 1\Scripts\FadeIn.cs" />
